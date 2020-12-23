@@ -118,7 +118,8 @@ export const BToaster = /*#__PURE__*/ Vue.extend({
       $toaster = h(
         'div',
         {
-          staticClass: 'b-toaster',
+          // Luke: add bootstrap class namespace
+          staticClass: 'bootstrap b-toaster',
           class: [this.staticName],
           attrs: {
             id: this.staticName,

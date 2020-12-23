@@ -1001,6 +1001,8 @@ export const BModal = /*#__PURE__*/ Vue.extend({
       return h(
         'div',
         {
+          // Luke: add bootstrap class namespace
+          staticClass: 'bootstrap',
           style: this.modalOuterStyle,
           attrs: this.computedAttrs,
           key: `modal-outer-${this[COMPONENT_UID_KEY]}`
